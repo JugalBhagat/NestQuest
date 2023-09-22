@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sort_filer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Filter"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="390dp"
+        android:layout_height="658dp"
+        android:contentDescription="this is scroll view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.466">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            tools:context=".sort_filer">
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ed_min"
+                app:layout_constraintHorizontal_bias="0.696"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.031" />
+
+            <TextView
+                android:id="@+id/txt_bhk_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BHK Type"
+                app:layout_constraintBottom_toTopOf="@+id/rg_prop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.188"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price"
+                app:layout_constraintVertical_bias="0.669" />
+
+            <TextView
+                android:id="@+id/txt_prop_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property Type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintStart_toEndOf="@+id/txt_bhk_type"
+                app:layout_constraintTop_toBottomOf="@+id/ed_max"
+                app:layout_constraintVertical_bias="0.124" />
+
+            <TextView
+                android:id="@+id/txt_furn_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Furniture Type"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toEndOf="@+id/txt_bhk_type"
+                app:layout_constraintTop_toBottomOf="@+id/ed_max"
+                app:layout_constraintVertical_bias="0.591" />
+
+            <EditText
+                android:id="@+id/ed_min"
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.417"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/ed_max"
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="99999"
+                android:inputType="number"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txt_bhk_typ"
+                android:layout_width="53dp"
+                android:layout_height="52dp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rg_furn" />
+
+            <RadioGroup
+                android:id="@+id/rg_bhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.162"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.436">
+
+                <RadioButton
+                    android:id="@+id/rb_1rk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 RK" />
+
+                <RadioButton
+                    android:id="@+id/rb_1bhk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 BHK" />
+
+                <RadioButton
+                    android:id="@+id/rb_2bhk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 BHK" />
+
+                <RadioButton
+                    android:id="@+id/rb_3bhkm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3 BHK +" />
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="124dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="197dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_prop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.397">
+
+                <RadioButton
+                    android:id="@+id/rb_flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flat" />
+
+                <RadioButton
+                    android:id="@+id/rb_ind_house"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Independent House" />
+
+                <RadioButton
+                    android:id="@+id/rb_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Row House" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_furn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9">
+
+                <RadioButton
+                    android:id="@+id/rb_unf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unfurnished" />
+
+                <RadioButton
+                    android:id="@+id/rb_semif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Semi-Furnished" />
+
+                <RadioButton
+                    android:id="@+id/rb_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Furnished" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/my_blue"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.998">
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Apply Filters" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

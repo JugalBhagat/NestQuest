@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/registration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Sign up here"
+        android:textColor="#2068A5"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/txt_firstname"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+    <EditText
+        android:id="@+id/txt_lastname"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/round_border"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Last name"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:background="@drawable/round_border"
+        android:inputType="textEmailAddress"
+        android:hint="Email Id"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:background="@drawable/round_border"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:inputType="phone"
+        android:layout_gravity="center"
+        android:textColorHint="@color/black"
+        android:background="@drawable/round_border"
+        android:hint="Mobile no"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/txt_age"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:background="@drawable/round_border"
+        android:hint="Age"
+        android:ems="10" />
+
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:text="Female" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="232dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="17dp"
+        android:backgroundTint="#2068A5"
+        android:textColor="@color/white"
+        android:text="Register as Tenant"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/lnkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="lnk login"
+        android:text="Already Registered? Login"
+        android:textColor="#3F51B5"
+        android:textSize="20dp" />
+
+</LinearLayout>

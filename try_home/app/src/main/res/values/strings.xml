@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">try_home</string>
+    <string name="header_image">header_image</string>
+    <string name="email">Email</string>
+    <string name="jugalbhagat">Jugalbhagat</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="own_title">Owner Secton</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_own_main">own_main</string>
+    <string name="tab_text_1">Dashboard</string>
+    <string name="tab_text_2">Profile</string>
+    <string name="title_activity_own_menu">own_menu</string>
+    <!--<string name="reg_hyp">Already Registered ?<a href="T_Login.class"> Login Here</a></string>-->
+</resources>

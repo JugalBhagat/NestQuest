@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642846129861",
+    "project_id": "try-home-51fe3",
+    "storage_bucket": "try-home-51fe3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642846129861:android:bc654809d54746203e3aac",
+        "android_client_info": {
+          "package_name": "com.example.try_home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642846129861-l63r20etevrcafc4kmju97d6n3bssvn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdS6quhgf0fHZmrdPm1IJv9hV5SJMM5pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642846129861-l63r20etevrcafc4kmju97d6n3bssvn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

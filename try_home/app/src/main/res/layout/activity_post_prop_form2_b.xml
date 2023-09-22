@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Post_prop_form">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:backgroundTint="#E91E63"
+        android:theme="?attr/actionBarTheme"
+        app:title="     Post Property"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-38dp">
+
+        <!--<TextView
+            android:id="@+id/txt_pref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preference"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.188"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.525"
+            tools:ignore="MissingConstraints" />-->
+
+        <TextView
+            android:id="@+id/txt_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.144"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/ed_rent"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_width="135dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.149"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_depo"
+            android:layout_width="58dp"
+            android:layout_height="19dp"
+            android:text="Deposite"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.253"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_price2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="₹"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.144"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_price3"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="₹"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.247"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="#E91E63"
+            android:text="Next"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.958" />
+
+        <EditText
+            android:id="@+id/ed_bhk_type"
+            android:layout_width="190dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="BHK"
+            android:enabled="false"
+            android:inputType="number"
+            android:textColorHint="#737070"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.738"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_bhk_type"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <TextView
+            android:id="@+id/txt_bhk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BHK type"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_prop_type"
+            app:layout_constraintVertical_bias="0.208" />
+
+        <EditText
+            android:id="@+id/ed_description"
+            android:layout_width="303dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Discription"
+            android:inputType="textMultiLine"
+            android:textColorHint="#737070"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_bhk_type"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_prop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.414"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/ed_depo"
+            android:layout_width="135dp"
+            android:layout_height="46dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/rg_prop_type"
+            app:layout_constraintEnd_toStartOf="@+id/txt_price3"
+            app:layout_constraintHorizontal_bias="0.685"
+            app:layout_constraintStart_toEndOf="@+id/txt_depo"
+            app:layout_constraintTop_toBottomOf="@+id/ed_rent"
+            app:layout_constraintVertical_bias="0.444"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/rg_prop_type"
+            android:layout_width="195dp"
+            android:layout_height="133dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.681"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_rent"
+            app:layout_constraintVertical_bias="0.197"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/rb_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flat"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/rb_rowh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Row House"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/rb_indep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Independent House"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_bhk_type"
+            android:layout_width="191dp"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.668"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_prop_type"
+            app:layout_constraintVertical_bias="0.099"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/rb_rk"
+                android:layout_width="98dp"
+                android:layout_height="37dp"
+                android:checked="true"
+                android:text="1 RK"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_address"
+                app:layout_constraintVertical_bias="0.087"
+                tools:ignore="DuplicateIds" />
+
+            <RadioButton
+                android:id="@+id/rb_bhk"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="BHK"
+                android:textColor="@color/black" />
+
+        </RadioGroup>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

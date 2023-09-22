@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Post_prop_form">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:backgroundTint="#E91E63"
+        android:theme="?attr/actionBarTheme"
+        app:title="     Post Property"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <!--<TextView
+            android:id="@+id/txt_pref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preference"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.188"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.525"
+            tools:ignore="MissingConstraints" />-->
+
+        <EditText
+            android:id="@+id/ed_price"
+            android:layout_width="135dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.144"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_price2"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:text="₹"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.834"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.144"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_prop_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.118"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="38dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="#E91E63"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.858" />
+
+        <RadioGroup
+            android:id="@+id/rg_prop_type"
+            android:layout_width="195dp"
+            android:layout_height="133dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_price"
+            app:layout_constraintVertical_bias="0.053"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/rb_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flat"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/rb_rowh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Row House"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:id="@+id/rb_indep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Independent House"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ed_bhk_type"
+            android:layout_width="190dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="BHK"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:gravity="center"
+            android:textColorHint="#737070"
+            android:inputType="number"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.71"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_bhk_type"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <TextView
+            android:id="@+id/txt_bhk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BHK type"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_prop_type"
+            app:layout_constraintVertical_bias="0.22" />
+
+        <RadioGroup
+            android:id="@+id/rg_bhk_type"
+            android:layout_width="191dp"
+            android:layout_height="31dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.712"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_prop_type"
+            app:layout_constraintVertical_bias="0.078"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/rb_rk"
+                android:layout_width="98dp"
+                android:layout_height="37dp"
+                android:text="1 RK"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_address"
+                app:layout_constraintVertical_bias="0.087"
+                tools:ignore="DuplicateIds" />
+
+            <RadioButton
+                android:id="@+id/rb_bhk"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="BHK" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ed_description"
+            android:layout_width="305dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="190dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Discription"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border"
+            android:textColorHint="#737070"
+            android:inputType="textMultiLine"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_bhk_type"
+            app:layout_constraintVertical_bias="0.133" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
